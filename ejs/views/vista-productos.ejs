@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Productos Navideños</title>
+    </head>
+    <body>
+        <h1 style="color:green;">Productos Navideños:</h1>
+
+        <table style="margin:20px;">
+            <tr>
+                <th rowspan="1" colspan="10" style="font-size:1.5rem; color:red; font-weight:bold; text-align:left; padding:5px; ">Producto</th>
+                <th rowspan="1" colspan="20" style="font-size:1.5rem; color:rgb(127, 127, 5); font-weight:bold; text-align:center; padding:5px; ">Precio</th>
+                <th rowspan="1" colspan="10"  style="font-size:1.5rem; color:green; font-weight:bold; text-align:center; padding:5px; ">Imagen</th>
+            </tr>
+            <% productos.map(valor  =>{  %>
+                <tr>
+                    <td rowspan="1" colspan="10" style="color:red; font-weight:bold; text-align:left; padding:5px; ">
+                        <%= valor.title %>
+                    </td>
+                    <td rowspan="1" colspan="20" style="color:rgb(127, 127, 5); font-weight:bold; text-align:center; padding:5px;">
+                       $ <%= valor.price %>
+                    </td>
+                    <td rowspan="1" colspan="10" style="color:green; text-align:center; padding:5px;">
+                        <img src="<%= valor.thumbnail %>" 
+                        
+                    </td>
+                </tr>
+            <% }) %>
+        </table>
+        <button> <a href="/">Formulario</a> </button>
+    </body>
+</html>

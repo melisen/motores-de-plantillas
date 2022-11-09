@@ -1,0 +1,22 @@
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title Productos Navideños
+    body
+        h1(style="color:green;") Productos Navideños:
+        table(style="margin:20px;")
+            tr  
+                th( style="font-size:1.5rem; color:red; font-weight:bold; text-align:left; padding:5px; ") Producto
+                th(style="font-size:1.5rem; color:rgb(127, 127, 5); font-weight:bold; text-align:center; padding:5px; ") Precio 
+                th(  style="font-size:1.5rem; color:green; font-weight:bold; text-align:center; padding:5px; ") Imagen
+            each valor in productos 
+                tr  
+                td( style="color:red; font-weight:bold; text-align:left; padding:5px; ")
+                        p=valor.title
+                td( style="color:rgb(127, 127, 5); font-weight:bold; text-align:center; padding:5px;")
+                        p=valor.price
+                td( style="color:green; text-align:center; padding:5px;") 
+                    img(src=valor.thumbnail)
+        button 
+            a(href="/") Formulario

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de gestión de productos:</h1>
+    <form action="/productos" method="POST" >
+        <h2>Ingreso de 1 producto</h2>
+       <label for="title">Nombre de producto:</label> 
+       <input type="text"  name="title"><br>
+       <label for="price">Precio:</label> 
+       <input type="text"  name="price"><br>
+       <label for="thumbnail">Imagen (URL):</label> 
+       <input type="text"  name="thumbnail"><br>
+       <button>Enviar</button>
+    </form>
+    <button> <a href="/productos">Productos</a> </button>
+</body>
+</html>

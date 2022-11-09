@@ -1,0 +1,1 @@
+Me resulta mejor usar handlebars porque es más similar al lenguaje HTML y sus incrustaciones son fáciles de realizar. 
